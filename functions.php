@@ -51,6 +51,7 @@ function greyskull_widgets_init() {
 }
 add_action( 'widgets_init', 'greyskull_widgets_init' );
 
+add_theme_support('automatic-feed-links');
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 400, 400 );
 
