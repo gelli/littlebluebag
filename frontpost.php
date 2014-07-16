@@ -9,8 +9,10 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-    <a class="img-wrap" href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail(null, array('class' => 'img-responsive')); ?>
-        <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
-    </a>
+    <div class="col-md-6 col-xs-12">
+        <a class="img-wrap" href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive')); ?>
+            <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+        </a>
+    </div>
 
