@@ -16,7 +16,7 @@
                     <span class="glyphicon glyphicon-phone-alt"></span> +49 (0)176 88121418
                 </p>
                 <p>
-                    <a href="/impressum/">Impressum</a> | <a href="/agb/">AGB</a>
+                    <a href="/impressum/">Impressum</a> | <a href="/agb/">AGB</a> | <a href="/datenschutz/">Datenschutz</a>
                 </p>
             </div>
         </div>

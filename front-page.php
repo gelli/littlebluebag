@@ -33,14 +33,14 @@ get_header(); ?>
                         <p>
                             <a href="/about/"><span class="teaser-camera glyphicon glyphicon-camera"></span></a> Katrin und Sandra.
                         </p><p>
-                            Auf jedenfall zu zweit unterwegs und gemeinsam wollen wir eins: in Bildern Geschichten erzählen.
+                            Auf jeden Fall zu zweit unterwegs und gemeinsam wollen wir eins: In Bildern Geschichten erzählen.
                         </p>
                         <p>
                             Persönlich. Lebendig. Einzigartig. Wir helfen euch aus eurem Urlaub ein unvergessliches Abenteuer werden zu lassen.
                         </p>
-                        <p>Wir geben euch Tipps rund um die Urlaubsplanung, die Reisefotografie und das filmen unterwegs. </p>
-                        <p>Auch die Bildverwaltung und Bearbeitung und der Filmschnitt werden Thema dieses Reiseblogs sein.</p>
-                        <p>Es ist eur Abenteuer. Entspannt euch! Wir sind für euch da.</p>
+                        <p>Wir geben euch Tipps rund um die Urlaubsplanung, die Reisefotografie und das Filmen unterwegs. </p>
+                        <p>Auch die Bildverwaltung, die Bearbeitung und der Filmschnitt werden Thema dieses Reiseblogs sein.</p>
+                        <p>Es ist euer Abenteuer. Entspannt euch! Wir sind für euch da.</p>
                         <p class="text-right">Katrin und Sandra.</p>
                     </div>
 
