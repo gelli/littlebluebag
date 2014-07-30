@@ -55,7 +55,7 @@ add_theme_support('automatic-feed-links');
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 400, 400 );
 
-add_image_size("image-wall", 720, 540, true);
+add_image_size("image-wall", 1140, 760, true);
 
 /*
  * Switch default core markup for search form, comment form, and comments
