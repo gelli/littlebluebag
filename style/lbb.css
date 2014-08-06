@@ -383,6 +383,16 @@ a:focus {
 }
 
 
+#featured-posts {
+    background-color: #f8b618;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
 .welcome h1,
 .h1,
 h2,
@@ -782,3 +792,4 @@ hr {
    vertical-align:middle;
    margin: -50%;
 }
+

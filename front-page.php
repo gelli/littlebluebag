@@ -105,6 +105,45 @@ get_header(); ?>
             <div class="clearfix"></div>
             <!-- /video and blog -->
         </div>
+
+
+
+
+
+            <?php
+            $query = new WP_Query( array (
+                'post_type' => 'post',
+                'posts_per_page' => '3',
+                'category_name' => 'featured'
+            ));
+
+            if ( $query->have_posts() ) : ?>
+
+            <h2 id="featured-posts">Meistgelesene Artikel</h2>
+            <div class="row sam-featured">
+
+
+            <?php // Start the Loop.
+            while ( $query->have_posts() ) : $query->the_post(); ?>
+
+            <div class="col-md-4 col-xs-12">
+                <a class="img-wrap" href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive')); ?>
+                    <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+                </a>
+            </div>
+
+                <?php endwhile;
+
+            else :
+                // If no content, include the "No posts found" template.
+                get_template_part( 'content', 'none' );
+
+            endif;
+            ?>
+
+        </div>
+        <div class="clearfix" style="margin-top:20px;"></div>
     </div>
 <?php
 get_footer();
