@@ -82,3 +82,31 @@ function new_excerpt_more($more) {
 }
 
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Add all users to author
+// Filter to fix the Post Author Dropdown
+
+function theme_post_author_override($output)
+{
+
+    // return if this isn't the theme author override dropdown
+    if (!preg_match('/post_author_override/', $output)) return $output;
+
+    // return if we've already replaced the list (end recursion)
+    if (preg_match ('/post_author_override_replaced/', $output)) return $output;
+
+    // replacement call to wp_dropdown_users
+    $output = wp_dropdown_users(array(
+        'echo' => 0,
+        'name' => 'post_author_override_replaced',
+        'selected' => empty($post->ID) ? $user_ID : $post->post_author,
+        'include_selected' => true
+    ));
+
+    // put the original name back
+    $output = preg_replace('/post_author_override_replaced/', 'post_author_override', $output);
+
+    return $output;
+}
+
+add_filter('wp_dropdown_users', 'theme_post_author_override');
