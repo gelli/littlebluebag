@@ -754,3 +754,31 @@ hr {
     display: block;
     margin: 0 auto;
 }
+
+/*
+ * styles for autor avatars provided by
+ * WP Biographia
+ */
+
+ .wp-biographia-pic {
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    height: 130px !important;
+    width:  130px !important;
+    margin: 0 -122px 0 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+
+    line-height: 130px;
+    text-align:center;
+}
+
+.wp-biographia-pic img {
+   height: 150px;
+    width: auto;
+   text-align: center;
+   max-width: none !important;
+   vertical-align:middle;
+   margin: -50%;
+}
