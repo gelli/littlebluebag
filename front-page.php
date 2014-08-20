@@ -55,21 +55,11 @@ get_header(); ?>
                         </p>
                     </div>
 
-                    <?php if (get_post_meta(get_the_id(), "video", true)) { ?>
-                    <div class="row videoWrapper">
-                        <iframe src="http://player.vimeo.com/video/<?php echo get_post_meta(get_the_id(), "video", true); ?>?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0"
-                                frameborder="0" webkitallowfullscreen mozallowfullscreen
-                                allowfullscreen>
-                        </iframe>
+                    <div class="teaser-box teaser-img">
+                        <a href="/about/">
+                            <?php echo wp_get_attachment_image( 267, 'post-thumbnail', false, array('class' => 'img-responsive')); ?>
+                         </a>
                     </div>
-                    <?php } else { ?>
-                        <div class="teaser-box teaser-img">
-                            <a href="/about/"><?php the_post_thumbnail(null, array('class' => 'img-responsive')); ?></a>
-                        </div>
-                    <?php } ?>
-
-
-
                 </div>
             </div> <!-- col-md-4 -->
 
