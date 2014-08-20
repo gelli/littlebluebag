@@ -72,20 +72,14 @@ get_header(); ?>
 
                 </div>
             </div> <!-- col-md-4 -->
-            
+
             <div class="col-md-8">
 
                 <div class="row image-wall">
 
                     <?php
-                    $query = new WP_Query( array (
-                        'post_type' => 'post',
-                        'posts_per_page' => '10',
-                    ));
 
-                    if ( $query->have_posts() ) :
-                        // Start the Loop.
-                        while ( $query->have_posts() ) : $query->the_post();
+                        if ( have_posts() ) : while ( have_posts() ) : the_post();
 
                             get_template_part( 'frontpost');
 
@@ -104,10 +98,11 @@ get_header(); ?>
 
             <div class="clearfix"></div>
             <!-- /video and blog -->
+
+            <div class="row text-center">
+                <?php grayskull_numeric_posts_nav(); ?>
+            </div>
         </div>
-
-
-
 
 
             <?php
