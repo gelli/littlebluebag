@@ -855,3 +855,11 @@ hr {
 .wp-biographia-text {
     float: none;
 }
+
+/*
+ * Styles for amazon ad integration
+ * 
+ */
+ #amazon-search {
+    margin-top: 20px;
+ }
