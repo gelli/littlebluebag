@@ -64,27 +64,19 @@ get_header(); ?>
                     </div>
                 </div>
             </div> <!-- col-md-4 -->
-
             <div class="col-md-8">
-
                 <div class="row image-wall">
-
                     <?php
-
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
-
                             get_template_part( 'frontpost');
-
                         endwhile;
-
-                    else :
-                        // If no content, include the "No posts found" template.
-                        get_template_part( 'content', 'none' );
-
-                    endif;
+                        else :
+                            // If no content, include the "No posts found" template.
+                            get_template_part( 'content', 'none' );
+                        endif;
                     ?>
+                </div> <!-- row imagewall -->
 
-                </div> <!-- row -->
                 <div id="amazon-search" class="row text-center">
                     <script charset="utf-8" type="text/javascript">
                         amzn_assoc_ad_type = "responsive_search_widget";
@@ -105,15 +97,15 @@ get_header(); ?>
             </div> <!-- col-md-8 -->
 
             <div class="clearfix"></div>
-            <!-- /video and blog -->
 
-            <div class="row text-center">
+            <!-- pager -->
+            <div class="text-center">
                 <?php grayskull_numeric_posts_nav(); ?>
             </div>
         </div>
 
-
-            <?php
+        <!-- Favorite Articles -->
+        <?php
             $query = new WP_Query( array (
                 'post_type' => 'post',
                 'posts_per_page' => '3',
@@ -121,31 +113,28 @@ get_header(); ?>
             ));
 
             if ( $query->have_posts() ) : ?>
-
-            <h2 id="featured-posts">Meistgelesene Artikel</h2>
             <div class="row sam-featured">
+                <h2 id="featured-posts">Meistgelesene Artikel</h2>
 
+                <?php //// Start the Loop.
+                while ( $query->have_posts() ) : $query->the_post(); ?>
 
-            <?php // Start the Loop.
-            while ( $query->have_posts() ) : $query->the_post(); ?>
+                    <div class="col-md-4 col-xs-12">
+                        <a class="img-wrap" href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive')); ?>
+                            <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+                        </a>
+                    </div>
 
-            <div class="col-md-4 col-xs-12">
-                <a class="img-wrap" href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive')); ?>
-                    <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
-                </a>
+                <?php endwhile; ?>
             </div>
-
-                <?php endwhile;
-
-            else :
+            <?php else :
                 // If no content, include the "No posts found" template.
                 get_template_part( 'content', 'none' );
 
             endif;
-            ?>
+        ?>
 
-        </div>
         <div class="clearfix" style="margin-top:20px;"></div>
     </div>
 <?php
