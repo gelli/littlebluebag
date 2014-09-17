@@ -11,6 +11,7 @@ function greyskull14_scripts() {
 
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js');
     wp_enqueue_script('bootstrap', get_template_directory_uri() .'/vnd/bootstrap/dist/js/bootstrap.min.js');
+    wp_enqueue_script('modernizr', get_template_directory_uri() .'/vnd/modernizr/modernizr.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'greyskull14_scripts' );

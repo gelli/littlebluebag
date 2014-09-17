@@ -68,12 +68,12 @@
 }
 
 
-.img-wrap:hover > div  {
+.no-touch .img-wrap:hover > div  {
     visibility: visible;
     opacity: 1;
 }
 
-.img-wrap > img {
+.no-touch .img-wrap > img {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
@@ -81,7 +81,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.img-wrap:hover > img {
+.no-touch .img-wrap:hover > img {
     -webkit-transform: scale(1.1) translate(10px);
 }
 
