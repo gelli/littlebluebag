@@ -113,13 +113,13 @@ get_header(); ?>
             ));
 
             if ( $query->have_posts() ) : ?>
-            <div class="row sam-featured">
+            <div class="row">
                 <h2 id="featured-posts">Meistgelesene Artikel</h2>
 
                 <?php //// Start the Loop.
                 while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                    <div class="col-md-4 col-xs-12">
+                    <div class="col-md-4 col-xs-12 sam-featured">
                         <a class="img-wrap" href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive')); ?>
                             <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
