@@ -16,10 +16,10 @@ get_header(); ?>
         <div class="row sam-content">
             <div class="col-md-4">
                 <div class="welcome text-center">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="img-suitcase" src="<?php echo get_template_directory_uri()?>/image/suitcase.png"/></a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="img-suitcase" src="<?php echo get_template_directory_uri()?>/static/images/suitcase.png"/></a>
                     <h1 style="font-size:3.6em;" class="sam-color-two">Welcome</h1>
                     <h4 class="sam-color-grey">and thank you for visiting</h4>
-                    <img id="littleblue-slogan" src="<?php echo get_template_directory_uri()?>/image/bluebag_logo_solo.png"/>
+                    <img id="littleblue-slogan" src="<?php echo get_template_directory_uri()?>/static/images/bluebag_logo_solo.png"/>
                     <h2 class="sam-color-one">Katrin <span class="sam-color-two">&</span> Sandra</h2>
                     <hr/>
                     <div>

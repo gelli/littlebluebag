@@ -25,14 +25,14 @@
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-        <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='<?php echo get_template_directory_uri(); ?>/image/fav//favicon.ico'>
-        <link href="<?php echo get_template_directory_uri(); ?>/image/fav/60x60.png" rel="apple-touch-icon" />
-        <link href="<?php echo get_template_directory_uri(); ?>/image/fav/76x76.png" rel="apple-touch-icon" sizes="76x76" />
-        <link href="<?php echo get_template_directory_uri(); ?>/image/fav/120x120.png" rel="apple-touch-icon" sizes="120x120" />
-        <link href="<?php echo get_template_directory_uri(); ?>/image/fav/152x152.png" rel="apple-touch-icon" sizes="152x152" />
+        <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='<?php echo get_template_directory_uri(); ?>/static/images/fav//favicon.ico'>
+        <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/60x60.png" rel="apple-touch-icon" />
+        <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/76x76.png" rel="apple-touch-icon" sizes="76x76" />
+        <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/120x120.png" rel="apple-touch-icon" sizes="120x120" />
+        <link href="<?php echo get_template_directory_uri(); ?>/static/images/fav/152x152.png" rel="apple-touch-icon" sizes="152x152" />
         
         <!--[if lt IE 9]>
-        <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/static/js/html5.js"></script>
         <![endif]-->
         <?php wp_head(); ?>
     </head>
@@ -40,7 +40,7 @@
     <body lang="de" <?php body_class(); ?>>
         <div class="page-header">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="text-center">
-                <img src="<?php echo get_template_directory_uri()?>/image/bluebag_logo.png" />
+                <img src="<?php echo get_template_directory_uri()?>/static/images/bluebag_logo.png" />
             </a>
         </div>
 
