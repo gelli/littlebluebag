@@ -190,10 +190,13 @@ module.exports = function (grunt) {
 
 
     //Image min
-    imagemin: {                         
-      dynamic: {                         
+    imagemin: {
+      dynamic: {
+        options: {
+          optimizationLevel: 0
+        },
         files: [{
-          expand: true,                  
+          expand: true,
           src: ['../../static/images/**/*.{png,jpg,gif}'],
           dest: '../../static/images'
         }]
@@ -224,7 +227,7 @@ module.exports = function (grunt) {
   //Asset pipelines
   grunt.registerTask('prepJS',     [ 'copy:js' ]);
   grunt.registerTask('prepStyles', [ 'sass:dist', 'autoprefixer', 'cssmin' ]);
-  grunt.registerTask('prepImages', [ 'copy:images', 'imagemin:dynamic' ]);
+  grunt.registerTask('prepImages', [ 'copy:images']); // , 'imagemin:dynamic' ]);
   grunt.registerTask('prepFonts',  [ 'copy:fonts' ]);
 
   //RUN ON START
