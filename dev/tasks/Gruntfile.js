@@ -91,7 +91,21 @@ module.exports = function (grunt) {
       }
     },
     // end ccs min
-     
+
+    uglify: {
+      js: {
+        options: {
+          sourceMap: false
+          // sourceMapName: ''
+        },
+        files: {
+          '../../static/js/bootstrap.js': ['../../static/js/bootstrap.js'],
+          '../../static/js/jquery.js': ['../../static/js/jquery.js'],
+          '../../static/js/modernizr.js': ['../../static/js/modernizr.js']
+        }
+      }
+    },
+
     //notify
     notify: {
       done: {
@@ -217,7 +231,7 @@ module.exports = function (grunt) {
   grunt.registerTask('init',       ['notify:initStart', 'bowercopy', 'copy:js', 'copy:images', 'sass:dev', 'prepFonts', 'notify:initDone']);
 
   //RUN FOR PRODUCTION 
-  grunt.registerTask('prod',       ['notify:distStart', 'bowercopy', 'prepJS', 'prepImages', 'prepStyles', 'prepFonts', 'compress:production', 'notify:distDone']);
+  grunt.registerTask('prod',       ['notify:distStart', 'bowercopy', 'prepJS','prepImages', 'prepStyles', 'prepFonts', 'uglify:js', 'compress:production', 'notify:distDone']);
   
   //DEFAULT
   grunt.registerTask('default', []);
