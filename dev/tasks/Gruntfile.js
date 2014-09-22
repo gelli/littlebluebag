@@ -191,13 +191,13 @@ module.exports = function (grunt) {
     compress: {
       production: {
         options: {
-          archive: '../../production/dressblue.zip'
+          archive: '../../production/littlebluebag.zip'
         },
         files: [
           {
             cwd: '../..',
             src: ['**',  '!dev/**', '!production/**'],
-            dest: 'dressblue/',
+            dest: 'littlebluebag/',
             expand: true
           },
         ]
