@@ -26,7 +26,7 @@
                 <div class="social-link"><a href="https://plus.google.com/112711029813738652601/posts" target="_blank">follow us on google <span class="sam-icon">&#xf101;</span></a></div>
                 <div class="social-link"><a href="http://www.pinterest.com/katrinandsandra/" target="_blank"><span class="sam-icon">&#xf103;</span> pin us on pinterest </a></div>
                 <div class="social-link"><a href="http://www.instagram.com/katrinandsandra" target="_blank">Katrin on instagram <span class="sam-icon">&#xf102;</span></a></div>
-                <div class="social-link"><a href="http://www.instagram.com/sandraundkatrin" target="_blank"><span class="sam-icon">&#xf102;</span> Sandra on instagram</a></div>
+                <div class="social-link"><a href="http://www.instagram.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf102;</span> Sandra on instagram</a></div>
                 <div class="social-link"><a href="https://vimeo.com/katrinandsandra" target="_blank">watch us on vimeo <span class="sam-icon">&#xf104;</span></a></div>
             </div>
         </div>

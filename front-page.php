@@ -52,8 +52,8 @@ get_header(); ?>
                             <a target="_blank" href="http://www.instagram.com/katrinandsandra">Folge <strong>Katrin</strong> auf Instagram</a>
                         </p>
                         <p>
-                            <a target="_blank" href="http://www.instagram.com/sandraundkatrin" class="sam-icon-size-48 sam-icon sam-color-two">&#xf102;</a>
-                            <a target="_blank" href="http://www.instagram.com/sandraundkatrin">Folge <strong>Sandra</strong> auf Instagram</a>
+                            <a target="_blank" href="http://www.instagram.com/littlebluebag" class="sam-icon-size-48 sam-icon sam-color-two">&#xf102;</a>
+                            <a target="_blank" href="http://www.instagram.com/littlebluebag">Folge <strong>Sandra</strong> auf Instagram</a>
                         </p>
                     </div>
 
