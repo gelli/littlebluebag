@@ -567,6 +567,14 @@ li.sam-icon-book > a:before {
   font-family: 'Glyphicons Halflings';
 }
 
+li.sam-icon-flag > a:before {
+    vertical-align: -10%;
+    font-size: 100%;
+    margin-right: 5px;
+    content: "\e034";
+    font-family: 'Glyphicons Halflings';
+}
+
 .social-contact {
   padding-top: 10px;
   padding-bottom: 10px;
