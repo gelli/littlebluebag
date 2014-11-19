@@ -87,8 +87,20 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Add all users to author
 // Filter to fix the Post Author Dropdown
 
-function theme_post_author_override($output)
-{
+/**
+ * Override post author drop down to also include
+ * all guests. Needed for the guest author box
+ *
+ * @param $output
+ * @return mixed|null|string
+ */
+function theme_post_author_override($output) {
+
+    /**
+     * Get the global post data to make sure
+     * we select the right editor
+     */
+    global $post;
 
     // return if this isn't the theme author override dropdown
     if (!preg_match('/post_author_override/', $output)) return $output;
@@ -109,7 +121,6 @@ function theme_post_author_override($output)
 
     return $output;
 }
-
 add_filter('wp_dropdown_users', 'theme_post_author_override');
 
 function grayskull_numeric_posts_nav() {
@@ -180,3 +191,6 @@ function grayskull_numeric_posts_nav() {
     echo '</ul>' . "\n";
 
 }
+
+
+load_theme_textdomain( 'littlebluebag', get_template_directory() . '/languages' );
