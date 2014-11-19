@@ -114,7 +114,7 @@ get_header(); ?>
 
             if ( $query->have_posts() ) : ?>
             <div class="row">
-                <h2 id="featured-posts">Meistgelesene Artikel</h2>
+                <h2 id="featured-posts"><?php _e( 'Most Popular Articles', 'littlebluebag' ); ?></h2>
 
                 <?php //// Start the Loop.
                 while ( $query->have_posts() ) : $query->the_post(); ?>
