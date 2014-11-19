@@ -29,7 +29,11 @@ get_header(); ?>
                         <a href="https://vimeo.com/katrinandsandra" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf104;</a>
                     </div>
                     <hr/>
-                        <a href="https://www.globetrotter.de/?utm_source=PTID13002690"><img src="http://ad.globetrotter-partnerprogramm.de/1-globetrotter-300x250.gif" alt="Globetrotter" /></a>
+                        <!-- <a href="https://www.globetrotter.de/?utm_source=PTID13002690"><img src="http://ad.globetrotter-partnerprogramm.de/1-globetrotter-300x250.gif" alt="Globetrotter" /></a> -->
+                    <a href="ebook-manuell-fotografieren">
+                        <img src="<?php echo get_template_directory_uri()?>/static/images/ebook.png" border="1"/>
+
+                    </a>
                     <hr/>
                     <div class="teaser-box text-left">
                         <p>
