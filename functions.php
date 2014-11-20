@@ -194,3 +194,12 @@ function grayskull_numeric_posts_nav() {
 
 
 load_theme_textdomain( 'littlebluebag', get_template_directory() . '/languages' );
+
+
+/**
+ * local fix since curl isn't working properly
+ * on yosemite
+ */
+add_filter( 'http_api_transports', function() {
+    return array( 'streams' );
+});
