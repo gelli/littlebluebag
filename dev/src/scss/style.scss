@@ -51,7 +51,6 @@ Style sheet for Dress Blue
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   margin: 0;
 
@@ -61,11 +60,6 @@ Style sheet for Dress Blue
   visibility: hidden;
   opacity: 0;
 
-  -webkit-transition:  opacity  0.3s;
-  -moz-transition:  opacity  0.3s;
-  -ms-transition:  opacity  0.3s;
-  -o-transition:  opacity  0.3s;
-  transition:  opacity  0.3s;
 }
 
 .img-wrap > div > p {
@@ -90,7 +84,7 @@ Style sheet for Dress Blue
 }
 
 .no-touch .img-wrap:hover > img {
-  -webkit-transform: scale(1.1) translate(10px);
+  -webkit-transform: scale(1.1);
 }
 
 
