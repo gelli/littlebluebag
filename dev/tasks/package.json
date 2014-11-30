@@ -15,6 +15,7 @@
     "grunt-notify": "^0.2.20",
     "grunt-po2mo": "^0.1.0",
     "grunt-pot": "^0.2.0",
+    "grunt-webfont": "^0.4.8",
     "matchdep": "^0.3.0"
   }
 }
