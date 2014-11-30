@@ -32,7 +32,7 @@ add_action( 'after_setup_theme', function () {
     // Enable support for Post Thumbnails for image wall
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 400, 400 );
-    add_image_size("image-wall", 1140, 760, true);
+    add_image_size("image-wall", 380, 253, true);
 
     /*
      * Switch default core markup for search form, comment form, and comments
