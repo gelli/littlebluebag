@@ -63,7 +63,20 @@ module.exports = function (grunt) {
       }
     },
     // end sass
-    
+
+    // webfont
+    webfont: {
+      icons: {
+        src: '../src/images/icons/yellow/*.svg',
+        dest: '../src/fonts/',
+        options: {
+          stylesheet: 'scss',
+          relativeFontPath: '../fonts/'
+        }
+      }
+    },
+    // end webfont
+
     //auto prefixer
     autoprefixer: {
       options: {
@@ -182,7 +195,7 @@ module.exports = function (grunt) {
       fonts: {
         files: [
           // includes files within path
-          {expand: true, cwd: '../src/fonts', src: ['**/*'], dest: '../../static/fonts', filter: 'isFile'},
+          {expand: true, cwd: '../src/fonts', src: ['**/*.eot', '**/*.svg', '**/*.ttf', '**/*.woff'], dest: '../../static/fonts', filter: 'isFile'},
         ]
       }
     },
@@ -266,10 +279,10 @@ module.exports = function (grunt) {
   grunt.registerTask('prepFonts',  [ 'copy:fonts' ]);
 
   //RUN ON START
-  grunt.registerTask('init',       ['notify:initStart', 'bowercopy', 'copy:js', 'copy:images', 'sass:dev', 'prepFonts', 'notify:initDone']);
+  grunt.registerTask('init',       ['notify:initStart', 'webfont:icons', 'bowercopy', 'copy:js', 'copy:images', 'sass:dev', 'prepFonts', 'notify:initDone']);
 
   //RUN FOR PRODUCTION 
-  grunt.registerTask('prod',       ['notify:distStart', 'bowercopy', 'prepJS','prepImages', 'prepStyles', 'prepFonts', 'uglify:js', 'compress:production', 'notify:distDone']);
+  grunt.registerTask('prod',       ['notify:distStart', 'webfont:icons', 'bowercopy', 'prepJS','prepImages', 'prepStyles', 'prepFonts', 'uglify:js', 'compress:production', 'notify:distDone']);
   
   //DEFAULT
   grunt.registerTask('default', []);
