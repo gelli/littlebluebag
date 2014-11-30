@@ -23,10 +23,11 @@ get_header(); ?>
                     <h2 class="sam-color-one">Katrin <span class="sam-color-two">&</span> Sandra</h2>
                     <hr/>
                     <div>
-                        <a href="https://www.facebook.com/littlebluebag" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf106;</a>
-                        <a href="https://plus.google.com/112711029813738652601/posts" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf101;</a>
-                        <a href="http://www.pinterest.com/katrinandsandra/" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf103;</a>
-                        <a href="https://vimeo.com/katrinandsandra" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf104;</a>
+                        <a href="https://www.facebook.com/littlebluebag" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf101;</a>
+                        <a href="https://plus.google.com/112711029813738652601/posts" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf102;</a>
+                        <a href="http://www.pinterest.com/katrinandsandra/" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf106;</a>
+                        <a href="https://vimeo.com/katrinandsandra" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf109;</a>
+                        <a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf10a;</a>
                     </div>
                     <hr/>
                         <!-- <a href="https://www.globetrotter.de/?utm_source=PTID13002690"><img src="http://ad.globetrotter-partnerprogramm.de/1-globetrotter-300x250.gif" alt="Globetrotter" /></a> -->

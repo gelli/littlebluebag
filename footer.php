@@ -28,6 +28,7 @@
                 <div class="social-link"><a href="http://www.instagram.com/katrinandsandra" target="_blank">Katrin on instagram <span class="sam-icon">&#xf102;</span></a></div>
                 <div class="social-link"><a href="http://www.instagram.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf102;</span> Sandra on instagram</a></div>
                 <div class="social-link"><a href="https://vimeo.com/katrinandsandra" target="_blank">watch us on vimeo <span class="sam-icon">&#xf104;</span></a></div>
+                <div class="social-link"><a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank"><span class="sam-icon">&#xf10a;</span> enjoy us on youtube</a></div>
             </div>
         </div>
 
