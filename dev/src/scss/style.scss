@@ -15,6 +15,16 @@ Style sheet for Dress Blue
 
 @import 'features';
 
+@import 'panels';
+
+
+.space-top {
+  margin-top: 20px;
+}
+
+.space-bottom {
+  martin-bottom: 20px;
+}
 
 .container {
   padding-right: 15px;
@@ -184,15 +194,13 @@ a:focus {
 }
 
 .teaser-box {
-  padding: 10px;
   margin-bottom:20px;
-  display: block;
 }
 
 .teaser-img {
   padding: 0;
+  margin: 0 auto;
 }
-
 
 .teaser-camera {
   font-size: 150%;
@@ -570,8 +578,10 @@ div.sam-section-row {
 }
 
 .sam-content {
-  border-radius: 4px;
-  display: block;
+}
+
+.sam-sidebar {
+  padding: 0 10px;
 }
 
 body {
