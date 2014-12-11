@@ -34,37 +34,18 @@
 
         <div class="col-md-4 col-sm-4 text-center">
             <div class="row-centered text-left">
-                <script type="text/javascript">
-                    //<![CDATA[
-                    if (typeof newsletter_check !== "function") {
-                        window.newsletter_check = function (f) {
-                            var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
-                            if (!re.test(f.elements["ne"].value)) {
-                                alert("The email is not correct");
-                                return false;
-                            }
-                            if (f.elements["ny"] && !f.elements["ny"].checked) {
-                                alert("You must accept the privacy statement");
-                                return false;
-                            }
-                            return true;
-                        }
-                    }
-                    //]]>
-                </script>
-                <h1>Newsletter</h1>
+                <h1>Werde Gastblogger!</h1>
                 <hr/>
-                <form method="post" action="/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
-                    <p>
-                    <div class="input-group">
-                        <span class="input-group-addon">@</span>
-                        <input type="email" name="ne" class="form-control" placeholder="E-Mail">
-                    </div>
-                    </p>
-                    <p>
-                    <input class="newsletter-submit btn btn-default" type="submit" value="Anmelden"/>
-                    </p>
-                </form>
+                <p>
+                    Wir sind immer wieder auf der Suche nach guten Gastbeiträgen.</p>
+                <p>
+                    Du hast eine tolle Reise unternommen und möchtest andere davon berichten?
+                    Schick uns doch ein paar Zeilen über dein erlebtes und welchen Mehrwert du unseren Lesern
+                    mit deinem Blogartikel bietest per E-Mail an:
+                    <a href="mailto:gastblogger@littlebluebag.de">gastblogger@littlebluebag.de</a>
+                </p><p>
+                    Wir freuen uns von dir zu hören.
+                </p>
             </div>
         </div>
 
