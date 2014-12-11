@@ -12,7 +12,7 @@
                     76684 Oestringen
                 </p>
                 <p>
-                    <a href="mailto:mail@littlebluebag.de"><span class="glyphicon glyphicon-envelope"></span> mail@littlebluebag.de</a><br/>
+                    <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:mail@littlebluebag.de">mail@littlebluebag.de</a><br/>
                     <span class="glyphicon glyphicon-phone-alt"></span> +49 (0)176 88121418
                 </p>
                 <p>

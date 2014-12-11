@@ -2,10 +2,14 @@
   border-radius: 0;
 }
 
+.panel-body {
+  color: #444 !important;
+}
+
 
 .panel-newsletter {
   background-image: url("../images/newsletter2.png");
-  background-color: #a6cfea;
+  background-color: #444;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -13,7 +17,6 @@
   height: 0;
   padding-top: 22.93%;
   overflow: hidden;
-  color: #fff;
 }
 
 
