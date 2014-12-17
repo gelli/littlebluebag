@@ -137,7 +137,7 @@ get_header(); ?>
         if ( $query->have_posts() ) : ?>
 
             <div class="row">
-                <h2 id="featured-posts"><?php _e(lbb_get_category(get_theme_mod('_s_f_slide_cat'))->name, 'littlebluebag' ); ?></h2>
+                <h2 id="featured-posts"><?php _e(lbb_get_category(get_theme_mod('lbb_custom_cat_1'))->name, 'littlebluebag' ); ?></h2>
 
                 <?php //// Start the Loop.
                 while ( $query->have_posts() ) : $query->the_post(); ?>
