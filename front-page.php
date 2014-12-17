@@ -16,7 +16,7 @@ get_header(); ?>
         <div class="row sam-content">
             <div class="col-md-4 ">
                 <div class="row">
-                    <div class="welcome text-center col-xs-12">
+                    <div class="welcome text-center col-ms-12 hidden-xs">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="img-suitcase" src="<?php echo get_template_directory_uri()?>/static/images/suitcase.png"/></a>
                         <h1 style="font-size:3.6em;" class="sam-color-two">Welcome</h1>
                         <h4 class="sam-color-grey">and thank you for visiting</h4>
@@ -31,14 +31,7 @@ get_header(); ?>
                             <a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf10a;</a>
                         </div>
                         <hr/>
-                            <!-- <a href="https://www.globetrotter.de/?utm_source=PTID13002690"><img src="http://ad.globetrotter-partnerprogramm.de/1-globetrotter-300x250.gif" alt="Globetrotter" /></a> -->
-                        <a href="ebook-manuell-fotografieren">
-                            <img src="<?php echo get_template_directory_uri()?>/static/images/ebook.png" border="1"/>
-
-                        </a>
-                        <hr/>
                     </div>
-
                     <div class="text-center col-xs-12">
                         <div class="teaser-box text-left">
                             <p>
@@ -54,6 +47,13 @@ get_header(); ?>
                             <p>Es ist euer Abenteuer. Entspannt euch! Wir sind für euch da.</p>
                             <p class="text-right">Katrin und Sandra.</p>
                         </div>
+                    </div>
+                    <div class="text-center col-xs-12">
+                        <hr/>
+                        <a href="ebook-manuell-fotografieren">
+                            <img src="<?php echo get_template_directory_uri()?>/static/images/ebook.png" border="1"/>
+                        </a>
+                        <hr/>
                     </div>
 
                     <div class="col-xs-12  col-sm-6 col-md-12">
@@ -74,6 +74,13 @@ get_header(); ?>
                             <a href="/about/">
                                 <?php echo wp_get_attachment_image( 267, 'post-thumbnail', false, array('class' => 'img-responsive teaser-img')); ?>
                              </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center col-sm-12 hidden-xs">
+                        <h3 class="featured-posts">Unser Vlog</h3>
+                        <div class="teaser-box videoWrapper">
+                            <iframe src="//www.youtube.com/embed/8EOiKJPNtH8?list=PLvr0Ef_Rv_qkBq1YZjyF2nLdWyAkwQk7L" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -119,18 +126,18 @@ get_header(); ?>
             </div>
         </div>
 
-
         <!-- Custom Category One -->
         <?php
         $query = new WP_Query( array (
           'post_type' => 'post',
           'posts_per_page' => '3',
-          'category_name' => 'featured'
+          'category_name' => lbb_get_category(get_theme_mod('lbb_custom_cat_1'))->slug
         ));
 
         if ( $query->have_posts() ) : ?>
+
             <div class="row">
-                <h2 id="featured-posts"><?php _e( 'Most Popular Articles', 'littlebluebag' ); ?></h2>
+                <h2 id="featured-posts"><?php _e(lbb_get_category(get_theme_mod('_s_f_slide_cat'))->name, 'littlebluebag' ); ?></h2>
 
                 <?php //// Start the Loop.
                 while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -145,6 +152,8 @@ get_header(); ?>
                 <?php endwhile; ?>
             </div>
         <?php endif; ?>
+
+
 
         <div class="row space-top">
             <div class="col-xs-12">
@@ -171,8 +180,33 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <!-- Most Read Articles -->
+        <?php
+        $query = new WP_Query( array (
+          'post_type' => 'post',
+          'posts_per_page' => '3',
+          'category_name' => 'featured'
+        ));
+
+        if ( $query->have_posts() ) : ?>
+            <div class="row">
+                <h2 id="featured-posts"><?php _e( 'Most Popular Articles', 'littlebluebag' ); ?></h2>
+
+                <?php //// Start the Loop.
+                while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12 sam-featured">
+                        <a class="img-wrap" href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
+                            <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+                        </a>
+                    </div>
+
+                <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
 
         <div class="clearfix space-top"></div>
     </div>

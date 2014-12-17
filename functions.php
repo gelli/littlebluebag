@@ -136,6 +136,53 @@ add_filter('wp_dropdown_users', function ($output) {
     return $output;
 });
 
+add_action( 'customize_register', function ( $wp_customize ) {
+
+    // Get all categories
+    $categories = get_categories();
+    $cats = array();
+    $i = 0;
+
+
+    foreach($categories as $category){
+        if($i==0){
+            $default = $category->slug;
+            $i++;
+        }
+        $cats[$category->term_id] = $category->name;
+    }
+
+    $wp_customize->add_setting('lbb_custom_cat_1', array(
+      'default'        => $default
+    ));
+
+    $wp_customize->add_control( 'cat_1_select_box', array(
+      'settings' => 'lbb_custom_cat_1',
+      'label'   => 'Select Category:',
+      'section'  => 'lbb_custom_frontpage_categories',
+      'type'    => 'select',
+      'choices' => $cats,
+    ));
+
+    $wp_customize->add_section( 'lbb_custom_frontpage_categories' , array(
+      'title'      => __( 'Custom Category #1', 'littlebluebag' ),
+      'priority'   => 30,
+    ) );
+
+});
+
+/**
+ * i18n enabled category names
+ *
+ * @param $categoryId
+ * @return array|null|object|WP_Error
+ */
+function lbb_get_category($categoryId) {
+    return function_exists ("pll_get_term")
+      ? get_category(pll_get_term($categoryId))
+      : get_category($categoryId);
+}
+
 /**
  * Entry pager function
  */
