@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: littlebluebag 0.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 21:51+0100\n"
-"PO-Revision-Date: 2014-11-19 23:12+0100\n"
+"POT-Creation-Date: 2015-02-04 22:12+0100\n"
+"PO-Revision-Date: 2015-02-04 22:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.10\n"
-"Language: de\n"
+"X-Generator: Poedit 1.7.4\n"
 
 #. //codex.wordpress.org/Template_Hierarchy
 #. *
@@ -88,7 +88,7 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: ../../content.php:71 ../../functions.php:81
+#: ../../content.php:71 ../../functions.php:100
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -112,32 +112,44 @@ msgstr[1] ""
 msgid "yyyy-mm-dd"
 msgstr ""
 
-#: ../../front-page.php:117
+#: ../../front-page.php:75
+msgid "Our Vlog"
+msgstr "Unser Vlog"
+
+#: ../../front-page.php:86
+msgid "Articles"
+msgstr "Blogeinträge"
+
+#: ../../front-page.php:190
 msgid "Most Popular Articles"
 msgstr "Meistgelesene Artikel"
 
-#: ../../functions.php:24
+#: ../../functions.php:66
 msgid "Header Menu"
 msgstr ""
 
-#: ../../functions.php:25
+#: ../../functions.php:67
 msgid "Right Header Menu"
 msgstr ""
 
-#: ../../functions.php:32
+#: ../../functions.php:74
 msgid "Sidebar Widget Area"
 msgstr ""
 
-#: ../../functions.php:34
+#: ../../functions.php:76
 msgid "Appears in the sidebar section of the site."
 msgstr ""
 
-#: ../../functions.php:42
+#: ../../functions.php:84
 msgid "Footer Widget Area"
 msgstr ""
 
-#: ../../functions.php:44
+#: ../../functions.php:86
 msgid "Appears in the footer section of the site."
+msgstr ""
+
+#: ../../functions.php:168
+msgid "Custom Category #1"
 msgstr ""
 
 #: ../../searchform.php:3

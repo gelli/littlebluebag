@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: littlebluebag 0.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 21:51+0100\n"
+"POT-Creation-Date: 2015-02-04 22:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "% Comments"
 msgstr ""
 
-#: ../../content.php:71 ../../functions.php:81
+#: ../../content.php:71 ../../functions.php:100
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -112,32 +112,44 @@ msgstr[1] ""
 msgid "yyyy-mm-dd"
 msgstr ""
 
-#: ../../front-page.php:117
+#: ../../front-page.php:75
+msgid "Our Vlog"
+msgstr ""
+
+#: ../../front-page.php:86
+msgid "Articles"
+msgstr ""
+
+#: ../../front-page.php:190
 msgid "Most Popular Articles"
 msgstr ""
 
-#: ../../functions.php:24
+#: ../../functions.php:66
 msgid "Header Menu"
 msgstr ""
 
-#: ../../functions.php:25
+#: ../../functions.php:67
 msgid "Right Header Menu"
 msgstr ""
 
-#: ../../functions.php:32
+#: ../../functions.php:74
 msgid "Sidebar Widget Area"
 msgstr ""
 
-#: ../../functions.php:34
+#: ../../functions.php:76
 msgid "Appears in the sidebar section of the site."
 msgstr ""
 
-#: ../../functions.php:42
+#: ../../functions.php:84
 msgid "Footer Widget Area"
 msgstr ""
 
-#: ../../functions.php:44
+#: ../../functions.php:86
 msgid "Appears in the footer section of the site."
+msgstr ""
+
+#: ../../functions.php:168
+msgid "Custom Category #1"
 msgstr ""
 
 #: ../../searchform.php:3
