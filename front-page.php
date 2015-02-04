@@ -74,7 +74,7 @@ get_header(); ?>
                     <div class="text-center col-xs-12">
                         <h3 class="featured-posts"><?php _e('Our Vlog', 'littlebluebag' ); ?></h3>
                         <div class="teaser-box videoWrapper">
-                            <iframe src="//www.youtube.com/embed/8EOiKJPNtH8?list=PLvr0Ef_Rv_qkBq1YZjyF2nLdWyAkwQk7L" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="//www.youtube.com/embed/?list=PLvr0Ef_Rv_qkBq1YZjyF2nLdWyAkwQk7L" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
