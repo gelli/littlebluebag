@@ -22,12 +22,12 @@
         </div>
         <div class="col-md-4 col-sm-4 text-center">
             <div class="row-centered social-contact">
-                <div class="social-link"><a href="https://www.facebook.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf106;</span> Like us on facebook</a></div>
-                <div class="social-link"><a href="https://plus.google.com/112711029813738652601/posts" target="_blank">follow us on google <span class="sam-icon">&#xf101;</span></a></div>
-                <div class="social-link"><a href="http://www.pinterest.com/katrinandsandra/" target="_blank"><span class="sam-icon">&#xf103;</span> pin us on pinterest </a></div>
-                <div class="social-link"><a href="http://www.instagram.com/katrinandsandra" target="_blank">Katrin on instagram <span class="sam-icon">&#xf102;</span></a></div>
-                <div class="social-link"><a href="http://www.instagram.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf102;</span> Sandra on instagram</a></div>
-                <div class="social-link"><a href="https://vimeo.com/katrinandsandra" target="_blank">watch us on vimeo <span class="sam-icon">&#xf104;</span></a></div>
+                <div class="social-link"><a href="https://www.facebook.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf101;</span> Like us on facebook</a></div>
+                <div class="social-link"><a href="https://plus.google.com/112711029813738652601/posts" target="_blank">follow us on google <span class="sam-icon">&#xf102;</span></a></div>
+                <div class="social-link"><a href="http://www.pinterest.com/katrinandsandra/" target="_blank"><span class="sam-icon">&#xf105;</span> pin us on pinterest </a></div>
+                <div class="social-link"><a href="http://www.instagram.com/katrinandsandra" target="_blank">Katrin on instagram <span class="sam-icon">&#xf103;</span></a></div>
+                <div class="social-link"><a href="http://www.instagram.com/littlebluebag" target="_blank"><span class="sam-icon">&#xf103;</span> Sandra on instagram</a></div>
+                <div class="social-link"><a href="https://vimeo.com/katrinandsandra" target="_blank">watch us on vimeo <span class="sam-icon">&#xf109;</span></a></div>
                 <div class="social-link"><a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank"><span class="sam-icon">&#xf10a;</span> enjoy us on youtube</a></div>
             </div>
         </div>
