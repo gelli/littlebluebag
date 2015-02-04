@@ -24,3 +24,9 @@
   margin-top: -28.04%;
   width: 65%;
 }
+
+@media (max-width: 767px) {
+  .panel-newsletter > .panel-body {
+    width: 100%;
+  }
+}
