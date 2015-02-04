@@ -18,6 +18,15 @@ Style sheet for Dress Blue
 @import 'panels';
 
 
+/* colors */
+$color-yellow: #f8b618; // orangish yellow ;)
+$color-lightblue: #a6cfea;
+$color-darkblue: #147ec9;
+$color-lightgrey: #eee;
+$color-darkgrey: #ccc;
+$color-text-main: #444;
+
+
 .space-top {
   margin-top: 20px;
 }
@@ -44,18 +53,18 @@ code {
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #eee;
+    color: $color-lightgrey;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #f8b618;
+    color: $color-yellow;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #f8b618;
+    color: $color-yellow;
     /* background-color: #69B2C7; */
     background-color: transparent;
   }
@@ -63,7 +72,7 @@ code {
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
+    color: $color-darkgrey;
   }
 }
 
@@ -91,8 +100,8 @@ code {
   padding-bottom: 60px;
   border-radius: 50%;
   overflow: hidden;
-  background: #a6cfea;
-  color: #eee;
+  background: $color-lightblue;
+  color: $color-lightgrey;
   float:left;
   text-align:center;
   margin-right: 10px;
@@ -119,9 +128,9 @@ input#submit {
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  color: #333;
+  color: $color-darkgrey;
   background-color: #fff;
-  border-color: #ccc;
+  border-color: $color-darkgrey;
 }
 
 .input-group-area > .form-control {
@@ -140,14 +149,14 @@ input#submit {
 }
 
 input#submit:hover {
-  color: #333;
+  color: $color-darkgrey;
   background-color: #ebebeb;
   border-color: #adadad;
   text-decoration: none;
 }
 
 header.entry-header {
-  border-bottom: 2px solid #a6cfea;
+  border-bottom: 2px solid $color-lightblue;
   margin-bottom:10px;
   padding-bottom:5px;
 }
@@ -158,13 +167,13 @@ header.entry-header {
 }
 
 a {
-  color: #147ec9;
+  color: $color-darkblue;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #f8b618;
+  color: $color-yellow;
   text-decoration: underline;
 }
 
@@ -205,11 +214,11 @@ a:focus {
 .teaser-camera {
   font-size: 150%;
   padding-right:5px;
-  color: #f8b618;
+  color: $color-yellow;
 }
 
 .sam-boxed {
-  border: 1px #f8b618 solid;
+  border: 1px $color-yellow solid;
   border-radius: 5px;
   box-shadow: 0 0 4px -2px rgba(0,0,0,0.2);
 }
@@ -220,7 +229,7 @@ a:focus {
 }
 
 .widget {
-  color: #5b5c5c;
+  color: $color-darkgrey;
   margin-bottom: 20px;
 }
 
@@ -238,7 +247,7 @@ a:focus {
   padding: 5px;
   display: block;
   color: #ffffff;
-  background-color: #a6cfea;
+  background-color: $color-lightblue;
 }
 
 .page-header {
@@ -294,7 +303,7 @@ a:focus {
 .page-header > a:hover,
 .page-header > a:focus {
   text-decoration: none;
-  color: #a6cfea;
+  color: $color-lightblue;
 }
 
 .page-header h1 {
@@ -327,7 +336,7 @@ a:focus {
 
 .featured-posts,
 #featured-posts {
-  background-color: #f8b618;
+  background-color: $color-yellow;
   padding: 5px;
   text-align: center;
   margin-top: 20px;
@@ -494,33 +503,33 @@ li.sam-icon-flag > a:before {
 }
 
 .social-contact span.sam-icon {
-  color: #444;
-  font-size: 40px;
+  color: $color-darkblue;
+  font-size: 36px;
 }
 
 .social-link {
   color: #ffffff;
   line-height: 40px;
-  font-size: 16px;
-  font-weight: bold;
+  /* font-size: 16px; */
+  /* font-weight: bold; */
   vertical-align: middle;
 }
 
 footer a:hover {
   text-decoration: none;
-  color: #147ec9;
+  color: $color-lightgrey;
 }
 
 .sam-color-one {
-  color: #a6cfea;
+  color: $color-lightblue;
 }
 
 .sam-color-two {
-  color: #147ec9;
+  color: $color-darkblue;
 }
 
 .sam-color-three {
-  color: #f8b618;
+  color: $color-yellow;
 }
 
 .sam-color-grey {
@@ -543,7 +552,7 @@ footer a:hover {
 }
 
 .sam-blog-content {
-  background-color: #a6cfea;
+  background-color: $color-lightblue;
   color: #fff;
   margin: 0 0 20px 0;
 }
@@ -574,7 +583,7 @@ div.sam-section-row {
 }
 
 .navbar-sam {
-  background-color: #a6cfea;
+  background-color: $color-lightblue;
 }
 
 .sam-content {
@@ -587,7 +596,7 @@ div.sam-section-row {
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: white;
-  color: #444;
+  color: $color-text-main;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -613,8 +622,8 @@ body {
 
 footer {
   margin: 0;
-  background-color: #a6cfea;
-  color: #444;
+  background-color: $color-lightblue;
+  color: #fff;
 }
 
 
@@ -625,11 +634,11 @@ footer h1 {
 }
 
 footer a {
-  color: #eee;
+  color: $color-darkblue;
 }
 
 hr {
-  color: #a6cfea;
+  color: $color-lightblue;
   border-width: 2px;
 }
 
@@ -644,7 +653,7 @@ hr {
 .widget > h2 > a,
 .sam-blog-content a,
 .navbar-default .navbar-nav > li > a {
-  color: #eee;
+  color: $color-darkblue;
 }
 
 .widget > h2 > a:hover,
@@ -653,7 +662,7 @@ hr {
 .sam-blog-content a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #147ec9;
+  color: $color-lightgrey;
   background-color: transparent;
 }
 
@@ -663,7 +672,7 @@ hr {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #147ec9;
+  color: $color-lightgrey;
   background-color: transparent;
 }
 
@@ -673,7 +682,7 @@ hr {
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #ccc;
+  color: $color-darkgrey;
   background-color: transparent;
 }
 
@@ -723,7 +732,7 @@ hr {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #147ec9;
+  color: $color-darkblue;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -743,8 +752,8 @@ hr {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #147ec9;
-  background-color: #eee;
+  color: $color-darkblue;
+  background-color: $color-lightgrey;
   border-color: #ddd;
 }
 .pagination > .active > a,
@@ -756,8 +765,8 @@ hr {
   z-index: 2;
   color: #fff;
   cursor: default;
-  background-color: #147ec9;
-  border-color: #147ec9;
+  background-color: $color-darkblue;
+  border-color: $color-darkblue;
 }
 
 /*
