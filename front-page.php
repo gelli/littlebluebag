@@ -16,23 +16,32 @@ get_header(); ?>
         <div class="row sam-content">
             <div class="col-md-4 ">
                 <div class="row">
-                    <div class="welcome text-center col-ms-12 hidden-xs">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="img-suitcase" src="<?php echo get_template_directory_uri()?>/static/images/suitcase.png"/></a>
-                        <h1 style="font-size:3.6em;" class="sam-color-two">Welcome</h1>
-                        <h4 class="sam-color-grey">and thank you for visiting</h4>
-                        <img id="littleblue-slogan" src="<?php echo get_template_directory_uri()?>/static/images/bluebag_logo_solo.png"/>
-                        <h2 class="sam-color-one">Katrin <span class="sam-color-two">&</span> Sandra</h2>
+                    <div class="text-center col-xs-12 hidden-xs">
+                        <a href="ebook-manuell-fotografieren">
+                            <img src="<?php echo get_template_directory_uri()?>/static/images/ebook.png" border="1"/>
+                        </a>
                         <hr/>
+                    </div>
+
+                    <div class="welcome text-center col-ms-12 hidden-xs">
                         <div>
                             <a href="https://www.facebook.com/littlebluebag" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf101;</a>
                             <a href="https://plus.google.com/112711029813738652601/posts" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf102;</a>
-                            <a href="http://www.pinterest.com/katrinandsandra/" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf106;</a>
+                            <a href="http://www.pinterest.com/katrinandsandra/" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf105;</a>
                             <a href="https://vimeo.com/katrinandsandra" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf109;</a>
                             <a href="https://www.youtube.com/channel/UCeqThqTs9zDDQVvlDIbACxg" target="_blank" class="sam-icon-size-48 sam-icon sam-color-three">&#xf10a;</a>
                         </div>
                         <hr/>
                     </div>
-                    <div class="text-center col-xs-12">
+                    <div class="text-center col-xs-12 col-sm-6 col-md-12">
+                        <div class="teaser-box">
+                            <a href="/about/">
+                                <?php echo wp_get_attachment_image( 267, 'post-thumbnail', false, array('class' => 'img-responsive teaser-img')); ?>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center col-xs-12 col-sm-6 col-md-12">
                         <div class="teaser-box text-left">
                             <p>
                                 <a href="/about/"><span class="teaser-camera glyphicon glyphicon-camera"></span></a> Katrin und Sandra.
@@ -48,37 +57,22 @@ get_header(); ?>
                             <p class="text-right">Katrin und Sandra.</p>
                         </div>
                     </div>
-                    <div class="text-center col-xs-12">
-                        <hr/>
-                        <a href="ebook-manuell-fotografieren">
-                            <img src="<?php echo get_template_directory_uri()?>/static/images/ebook.png" border="1"/>
-                        </a>
-                        <hr/>
-                    </div>
 
-                    <div class="col-xs-12  col-sm-6 col-md-12">
+                    <div class="col-xs-12">
                         <div class="teaser-box sam-boxed text-center">
                             <p>
-                                <a target="_blank" href="http://www.instagram.com/katrinandsandra" class="sam-icon-size-48 sam-icon sam-color-two">&#xf102;</a>
+                                <a target="_blank" href="http://www.instagram.com/katrinandsandra" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
                                 <a target="_blank" href="http://www.instagram.com/katrinandsandra">Folge <strong>Katrin</strong> auf Instagram</a>
                             </p>
                             <p>
-                                <a target="_blank" href="http://www.instagram.com/littlebluebag" class="sam-icon-size-48 sam-icon sam-color-two">&#xf102;</a>
+                                <a target="_blank" href="http://www.instagram.com/littlebluebag" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
                                 <a target="_blank" href="http://www.instagram.com/littlebluebag">Folge <strong>Sandra</strong> auf Instagram</a>
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <div class="teaser-box">
-                            <a href="/about/">
-                                <?php echo wp_get_attachment_image( 267, 'post-thumbnail', false, array('class' => 'img-responsive teaser-img')); ?>
-                             </a>
-                        </div>
-                    </div>
-
-                    <div class="text-center col-sm-12 hidden-xs">
-                        <h3 class="featured-posts">Unser Vlog</h3>
+                    <div class="text-center col-xs-12">
+                        <h3 class="featured-posts"><?php _e('Our Vlog', 'littlebluebag' ); ?></h3>
                         <div class="teaser-box videoWrapper">
                             <iframe src="//www.youtube.com/embed/8EOiKJPNtH8?list=PLvr0Ef_Rv_qkBq1YZjyF2nLdWyAkwQk7L" frameborder="0" allowfullscreen></iframe>
                         </div>
@@ -88,6 +82,9 @@ get_header(); ?>
 
             <div class="col-md-8">
                 <div class="row image-wall">
+                    <div class="visible-xs visible-sm">
+                        <h3 class="featured-posts"><?php _e('Articles', 'littlebluebag' ); ?></h3>
+                    </div>
                     <?php
                         if ( have_posts() ) : while ( have_posts() ) : the_post();
                             get_template_part( 'frontpost');
@@ -152,8 +149,6 @@ get_header(); ?>
                 <?php endwhile; ?>
             </div>
         <?php endif; ?>
-
-
 
         <div class="row space-top">
             <div class="col-xs-12">
