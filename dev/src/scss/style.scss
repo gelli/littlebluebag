@@ -89,6 +89,10 @@ code {
   border-radius: 4px;
 }
 
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
 .post-navigation {
   margin: 20px 0;
   font-size: 125%;
