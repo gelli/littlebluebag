@@ -32,7 +32,7 @@ $color-text-main: #444;
 }
 
 .space-bottom {
-  martin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -363,11 +363,6 @@ article {
   margin-bottom:20px;
 }
 
-article h2 {
-  font-size: 100%;
-  font-weight: bold;
-}
-
 article img {
   margin: 2px;
 }
@@ -599,7 +594,7 @@ div.sam-section-row {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: white;
   color: $color-text-main;
   -webkit-font-smoothing: antialiased;
