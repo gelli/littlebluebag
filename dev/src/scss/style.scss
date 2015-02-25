@@ -11,13 +11,6 @@ Style sheet for Dress Blue
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(http://fonts.googleapis.com/css?family=Great+Vibes);
 
-@import 'icons';
-
-@import 'features';
-
-@import 'panels';
-
-
 /* colors */
 $color-yellow: #f8b618; // orangish yellow ;)
 $color-lightblue: #a6cfea;
@@ -26,6 +19,14 @@ $color-lightgrey: #eee;
 $color-darkgrey: #ccc;
 $color-text-main: #444;
 
+
+@import 'icons';
+
+@import 'features';
+
+@import 'panels';
+
+@import 'navbar';
 
 .space-top {
   margin-top: 20px;
@@ -47,51 +48,7 @@ code {
   white-space: pre-wrap;
 }
 
-.nav > li > a {
-  padding: 15px 10px 10px 10px;
-}
 
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: $color-lightgrey;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: $color-yellow;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: $color-yellow;
-    /* background-color: #69B2C7; */
-    background-color: transparent;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: $color-darkgrey;
-  }
-}
-
-.navbar-toggle {
-  position: relative;
-  float: left;
-  padding: 9px 10px;
-  margin-top: 8px;
-  margin-left: 15px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-    display: block;    
-}
 
 .post-navigation {
   margin: 20px 0;
@@ -202,9 +159,6 @@ a:focus {
   margin-right: auto;
 }
 
-.navbar-collapse {
-  max-height: none;
-}
 
 .teaser-box {
   margin-bottom:20px;
