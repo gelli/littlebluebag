@@ -36,8 +36,8 @@ get_header(); ?>
                                             <h3>Newsletter</h3>
                                             <hr class="visible-sm visible-md visible-lg"/>
                                             <p class="visible-md visible-lg">
-                                                Ihr wollt immer von den neuesten Neuigkeiten erfahren? Kein Problem!
-                                                Meldet euch für unseren monatlichen Newsletter an.
+                                                Du willst immer von den neuesten Neuigkeiten erfahren? Kein Problem!
+                                                Melde dich für unseren monatlichen Newsletter an.
                                             </p>
                                             <form method="post" action="/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
                                                 <p>
