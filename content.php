@@ -55,7 +55,9 @@
 
     <?php if (!is_single()) : ?>
     <div class="entry-thumb">
-        <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>
+        <a href="<?php echo esc_url(get_permalink()); ?>">
+            <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>
+        </a>
     </div>
 
     <?php endif; ?>
