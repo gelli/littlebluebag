@@ -61,12 +61,12 @@ get_header(); ?>
                     <div class="col-xs-12">
                         <div class="teaser-box sam-boxed text-center">
                             <p>
-                                <a target="_blank" href="http://www.instagram.com/katrinandsandra" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
-                                <a target="_blank" href="http://www.instagram.com/katrinandsandra">Folge <strong>Katrin</strong> auf Instagram</a>
+                                <a target="_blank" rel="nofollow" href="http://www.instagram.com/katrinandsandra" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
+                                <a target="_blank" rel="nofollow" href="http://www.instagram.com/katrinandsandra">Folge <strong>Katrin</strong> auf Instagram</a>
                             </p>
                             <p>
-                                <a target="_blank" href="http://www.instagram.com/littlebluebag" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
-                                <a target="_blank" href="http://www.instagram.com/littlebluebag">Folge <strong>Sandra</strong> auf Instagram</a>
+                                <a target="_blank" rel="nofollow" href="http://www.instagram.com/littlebluebag" class="sam-icon-size-48 sam-icon sam-color-two">&#xf103;</a>
+                                <a target="_blank" rel="nofollow" href="http://www.instagram.com/littlebluebag">Folge <strong>Sandra</strong> auf Instagram</a>
                             </p>
                         </div>
                     </div>
@@ -157,8 +157,8 @@ get_header(); ?>
                         <h3>Newsletter</h3>
                         <hr class="visible-sm visible-md visible-lg"/>
                         <p class="visible-md visible-lg">
-                            Ihr wollt immer von den neuesten Neuigkeiten erfahren? Kein Problem!
-                            Meldet euch für unseren monatlichen Newsletter an.
+                            Du willst immer von den neuesten Neuigkeiten erfahren? Kein Problem!
+                            Melde dich für unseren monatlichen Newsletter an.
                         </p>
                         <form method="post" action="/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
                             <p>
