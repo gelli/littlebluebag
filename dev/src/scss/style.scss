@@ -19,14 +19,11 @@ $color-lightgrey: #eee;
 $color-darkgrey: #ccc;
 $color-text-main: #444;
 
-
 @import 'icons';
-
 @import 'features';
-
 @import 'panels';
-
 @import 'navbar';
+@import 'woocommerce';
 
 .space-top {
   margin-top: 20px;
