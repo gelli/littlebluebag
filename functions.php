@@ -51,6 +51,13 @@ add_action('after_setup_theme',  function () {
 });
 
 /**
+ * Write seo by yoast sitemap to robots.txt
+ */
+add_action('do_robotstxt', function () {
+  echo "Sitemap: ".get_site_url()."/sitemap_index.xml\n";
+});
+
+/**
  * Enqueue scripts and styles
  */
 add_action( 'wp_enqueue_scripts', function () {
