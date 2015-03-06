@@ -17,8 +17,12 @@
                 </p>
                 <p>
                     <a href="/impressum/">Impressum</a> | <a href="/agb/">AGB</a> | <a href="/datenschutz/">Datenschutz</a>
+
                 </p>
-            </div>
+              <p>
+                <?php get_search_form(true); ?>
+              </p>
+              </div>
         </div>
         <div class="col-md-4 col-sm-4 text-center">
             <div class="row-centered social-contact">
