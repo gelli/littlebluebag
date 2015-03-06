@@ -44,6 +44,13 @@ add_action( 'after_setup_theme', function () {
 });
 
 /**
+ * Declare woocommerce plugin support
+ */
+add_action('after_setup_theme',  function () {
+  add_theme_support('woocommerce');
+});
+
+/**
  * Enqueue scripts and styles
  */
 add_action( 'wp_enqueue_scripts', function () {
