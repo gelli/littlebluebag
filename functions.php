@@ -6,6 +6,8 @@
  */
 require(get_template_directory().'/inc/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php');
 
+require(get_template_directory().'/inc/woocommerce/functions.php');
+
 /**
  * Setup theme options
  */
@@ -41,13 +43,6 @@ add_action( 'after_setup_theme', function () {
     add_theme_support('html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
     ));
-});
-
-/**
- * Declare woocommerce plugin support
- */
-add_action('after_setup_theme',  function () {
-  add_theme_support('woocommerce');
 });
 
 /**
