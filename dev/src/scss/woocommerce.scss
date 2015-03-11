@@ -1,6 +1,18 @@
 .woocommerce ul.products li.product a img,
-.woocommerce div.product div.images img {
-  width: inherit;
+.woocommerce div.product div.images img,
+.woocommerce .related ul li.product img,
+.woocommerce .related ul.products li.product img,
+.woocommerce .upsells.products ul li.product img,
+.woocommerce .upsells.products ul.products li.product img,
+.woocommerce-page .related ul li.product img,
+.woocommerce-page .related ul.products li.product img,
+.woocommerce-page .upsells.products ul li.product img,
+.woocommerce-page .upsells.products ul.products li.product img {
+  width: auto;
+}
+
+.woocommerce .related ul li.product, .woocommerce .related ul.products li.product, .woocommerce .upsells.products ul li.product, .woocommerce .upsells.products ul.products li.product, .woocommerce-page .related ul li.product, .woocommerce-page .related ul.products li.product, .woocommerce-page .upsells.products ul li.product, .woocommerce-page .upsells.products ul.products li.product {
+  width: 22%;
 }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,
@@ -15,6 +27,5 @@
 .woocommerce button.button:hover,
 .woocommerce input.button:hover {
   background-color: $color-lightblue;
-
   color: #fff;
 }
