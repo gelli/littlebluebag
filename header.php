@@ -48,7 +48,7 @@
 
             <!-- navbar -->
             <div class="row">
-                <nav data-spy="affix" data-offset-top="170" id="sam-main-nav" class="navbar navbar-sam navbar-static-top navbar-default" role="navigation">
+                <nav data-spy="affix" data-offset-top="147" id="sam-main-nav" class="navbar navbar-sam navbar-static-top navbar-default" role="navigation">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
