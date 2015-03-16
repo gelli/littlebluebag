@@ -17,10 +17,11 @@ get_header(); ?>
             <div class="col-md-4 ">
                 <div class="row">
                     <div class="text-center col-xs-12 hidden-xs">
-                        <a href="ebook-manuell-fotografieren">
-                            <img src="<?php echo get_template_directory_uri()?>/static/images/ebook.png" border="1"/>
-                        </a>
-                        <hr/>
+                      <a href="https://my.leadpages.net/leadbox/140f32873f72a2%3A13706bf69b46dc/5632908932939776/">
+                        <img class="img-responsive" src="<?php echo get_template_directory_uri()?>/static/images/ebook2.jpg" border="1"/>
+                      </a>
+                      <script data-leadbox="140f32873f72a2:13706bf69b46dc" data-url="https://my.leadpages.net/leadbox/140f32873f72a2%3A13706bf69b46dc/5632908932939776/" data-config="%7B%7D" type="text/javascript" src="//my.leadpages.net/leadbox-901.js"></script>
+                      <hr/>
                     </div>
 
                     <div class="welcome text-center col-ms-12 hidden-xs">
@@ -124,57 +125,48 @@ get_header(); ?>
         </div>
 
         <!-- Custom Category One -->
-        <?php
-        $query = new WP_Query( array (
-          'post_type' => 'post',
-          'posts_per_page' => '3',
-          'category_name' => lbb_get_category(get_theme_mod('lbb_custom_cat_1'))->slug
-        ));
 
-        if ( $query->have_posts() ) : ?>
+        <div class="row">
+          <div class="col-sm-8">
 
-            <div class="row">
+            <?php
+            $query = new WP_Query( array (
+              'post_type' => 'post',
+              'posts_per_page' => '4',
+              'category_name' => lbb_get_category(get_theme_mod('lbb_custom_cat_1'))->slug
+            ));
+
+            if ( $query->have_posts() ) : ?>
+
                 <h2 id="featured-posts"><?php _e(lbb_get_category(get_theme_mod('lbb_custom_cat_1'))->name, 'littlebluebag' ); ?></h2>
+                <div class="row">
+                    <?php //// Start the Loop.
+                    while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                <?php //// Start the Loop.
-                while ( $query->have_posts() ) : $query->the_post(); ?>
+                        <div class="col-md-6 col-sm-6 col-xs-12 sam-featured">
+                            <a class="img-wrap" href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
+                                <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
+                            </a>
+                        </div>
 
-                    <div class="col-md-4 col-sm-4 col-xs-12 sam-featured">
-                        <a class="img-wrap" href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail("image-wall", array('class' => 'img-responsive lbb-feature-image')); ?>
-                            <div><!-- <p><?php echo get_the_title(); ?> </p>--> </div>
-                        </a>
-                    </div>
-
-                <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
-
-        <div class="row space-top">
-            <div class="col-xs-12">
-                <div class="panel panel-default panel-newsletter">
-                    <div class="panel-body  ">
-                        <h3>Newsletter</h3>
-                        <hr class="visible-sm visible-md visible-lg"/>
-                        <p class="visible-md visible-lg">
-                            Du willst immer von den neuesten Neuigkeiten erfahren? Kein Problem!
-                            Melde dich für unseren monatlichen Newsletter an.
-                        </p>
-                        <form method="post" action="/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
-                            <p>
-                            <div class="input-group">
-                                <span class="input-group-addon">@</span>
-                                <input type="email" name="ne" class="form-control" placeholder="E-Mail">
-                                <span class="input-group-btn">
-                                    <input class="newsletter-submit btn btn-default" type="submit" value="Anmelden"/>
-                                </span>
-                            </div>
-
-                            </p>
-                        </form>
-                    </div>
+                    <?php endwhile; ?>
                 </div>
+            <?php endif; ?>
+          </div>
+          <div class="col-sm-4">
+
+            <h2 class="featured-posts">Newsletter</h2>
+            <div class="row">
+              <div class="col-sm-12">
+                <a href="https://my.leadpages.net/leadbox/140bd4973f72a2%3A13706bf69b46dc/5638830484881408/"">
+                  <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/static/images/newsletter2.jpg"/>
+                </a>
+                <script data-leadbox="140bd4973f72a2:13706bf69b46dc" data-url="https://my.leadpages.net/leadbox/140bd4973f72a2%3A13706bf69b46dc/5638830484881408/" data-config="%7B%7D" type="text/javascript" src="//my.leadpages.net/leadbox-901.js"></script>
+              </div>
             </div>
+
+          </div>
         </div>
 
         <!-- Most Read Articles -->
@@ -186,8 +178,10 @@ get_header(); ?>
         ));
 
         if ( $query->have_posts() ) : ?>
+          <h2 id="featured-posts"><?php _e( 'Most Popular Articles', 'littlebluebag' ); ?></h2>
             <div class="row">
-                <h2 id="featured-posts"><?php _e( 'Most Popular Articles', 'littlebluebag' ); ?></h2>
+
+
 
                 <?php //// Start the Loop.
                 while ( $query->have_posts() ) : $query->the_post(); ?>

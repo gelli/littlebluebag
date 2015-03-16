@@ -29,36 +29,7 @@ get_header(); ?>
 
                             ?>
 
-                            <div class="row space-top">
-                                <div class="col-xs-12">
-                                    <div class="panel panel-default panel-newsletter">
-                                        <div class="panel-body  ">
-                                            <h3>Newsletter</h3>
-                                            <hr class="visible-sm visible-md visible-lg"/>
-                                            <p class="visible-md visible-lg">
-                                                Du willst immer von den neuesten Neuigkeiten erfahren? Kein Problem!
-                                                Melde dich für unseren monatlichen Newsletter an.
-                                            </p>
-                                            <form method="post" action="/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
-                                                <p>
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">@</span>
-                                                    <input type="email" name="ne" class="form-control" placeholder="E-Mail">
-                                <span class="input-group-btn">
-                                    <input class="newsletter-submit btn btn-default" type="submit" value="Anmelden"/>
-                                </span>
-                                                </div>
-
-                                                </p>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <?php
-
 
                             // If comments are open or we have at least one comment, load up the comment template.
                             if ( comments_open() || get_comments_number() ) {
